@@ -45,3 +45,32 @@ bun install
 # Usage
 
 To use the project, you need to take a video file with the original format `mp4`, `webm`, `mkv`, or `flv`, put it into the `.custom` folder, and rename it to `input.mp4`, `input.webm`, `input.mkv`, or `input.flv` like this:
+
+![Example 1](/example/1.png)
+
+And then you need to run the project to build a live wallpaper resource packs.
+
+```bash
+bun run build
+```
+
+After running, the project will not return any errors and you will have successfully created a resource pack. Usually, your resource pack will be automatically installed into your game, and you just need to launch the game and enjoy it.
+
+![Example 1](/example/2.png)
+
+# Configure
+
+You can also configure by editing the file `config.ts` in the `.custom` folder with parameters such as fps, resolution, and more.
+
+```ts
+export const CONFIGS: CONFIGS = {
+	// input file name (exclude extension)
+	input_file_name: "input",
+	// fps
+	fps: 15,
+	// resolution
+	resolution: "1280x720",
+	// export type
+	exportType: "jpg",
+}
+```
