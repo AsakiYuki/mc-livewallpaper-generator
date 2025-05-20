@@ -12,14 +12,13 @@ const flakpakVersionPath = `${process.env.HOME}/.var/app/io.mrarm.mcpelauncher/d
  */
 const config = {
 	compiler: {
-		autoCompress: false,
+		autoCompress: true,
 		UI: {
-			obfuscateType: true,
 			namespaceAmount: 1,
 		},
 	},
 	installer: {
-		autoInstall: true,
+		autoInstall: false,
 		developEvironment: true,
 		customPath: existsSync(flakpakVersionPath),
 		installPath: flakpakVersionPath,

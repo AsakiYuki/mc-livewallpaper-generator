@@ -56,7 +56,7 @@ And then you need to run the project to build a live wallpaper resource packs.
 bun run build
 ```
 
-After running, the project will not return any errors and you will have successfully created a resource pack. Usually, your resource pack will be automatically installed into your game, and you just need to launch the game and enjoy it.
+<!-- After running, the project will not return any errors and you will have successfully created a resource pack. Usually, your resource pack will be automatically installed into your game, and you just need to launch the game and enjoy it. -->
 
 ![Example 1](/example/2.png)
 

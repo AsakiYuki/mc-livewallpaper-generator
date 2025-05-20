@@ -5,8 +5,8 @@ export const CONFIGS: CONFIGS = {
     quality: 1,
     input_file_name: "input",
 
-    //* Supported: "betmc_ui"
-    support: "betmc_ui",
+    //* Supported: "betmc_ui", "vanilla"
+    support: "vanilla",
 }
 
 // type
@@ -20,7 +20,7 @@ interface CONFIGS {
 }
 
 
-type SUPPORT = "betmc_ui";
+type SUPPORT = "betmc_ui" | "vanilla";
 type RESOLUTION = "3840x2160" | "1920x1080" | "1280x720"
 type EXPORT_TYPE = "jpg" | "png"
 type QUALITY = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
