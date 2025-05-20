@@ -46,7 +46,7 @@ bun install
 
 # Usage
 
-To use the project, you need to take a video file with the original format `mp4`, `webm`, `mkv`, or `flv`, put it into the `.custom` folder, and rename it to `input.mp4`, `input.webm`, `input.mkv`, or `input.flv` like this:
+To use the project, you need to take a video file with the original format `mp4`, or `mkv`, put it into the `.custom` folder, and rename it to `input.mp4` or `input.mkv` like this:
 
 ![Example 1](/example/1.png)
 

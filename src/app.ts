@@ -9,7 +9,7 @@ import { CONFIGS } from "../.custom/config";
 import generator from "./generator";
 
 if (!file) {
-    Log.error("Video file not found, please add a file named 'input.mp4', 'input.webm', 'input.mkv', or 'input.flv'.");
+    Log.error("Video file not found, please add a file named 'input.mp4', or 'input.mkv'.");
     process.exitCode = 1;
 }
 
