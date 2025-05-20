@@ -4,10 +4,17 @@ node_modules
 # Build Folders
 .minecraft
 .build
+.bedrock
 .save
 
 # Build variables
-# asakiyuki.env.cjs
+asakiyuki.env.cjs
 
 # Compress package
 Minecraft-UIBuild.mcpack
+
+# Media files
+*.mp4
+*.webm
+*.mkv
+*.flv
