@@ -1,0 +1,13 @@
+# Node packages
+node_modules
+
+# Build Folders
+.minecraft
+.build
+.save
+
+# Build variables
+asakiyuki.env.cjs
+
+# Compress package
+Minecraft-UIBuild.mcpack

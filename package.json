@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "jsonui-scripting": "^2.2.11"
+  }
+}
