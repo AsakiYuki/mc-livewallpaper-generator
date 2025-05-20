@@ -38,7 +38,7 @@ if (process.exitCode !== 1) {
     console.log('---------- CONVERING ----------')
 
     const duration = +execSync(`ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 .custom/${file}`, { stdio: "pipe" }).toString();
-    const totalFrames = Math.floor(duration * CONFIGS.fps);
+    const totalFrames = Math.round(duration * CONFIGS.fps);
 
     const bar = new progress.SingleBar({
         format: '\x1b[34mSplitting to Frames\x1b[0m [\x1b[32m{bar}\x1b[0m] \x1b[34m{percentage}% | {current}/{total} frames\x1b[0m',
@@ -55,7 +55,7 @@ if (process.exitCode !== 1) {
         "-i", `.custom/${file}`,
         "-s", CONFIGS.resolution,
         "-r", CONFIGS.fps.toString(10),
-        `.bedrock/textures/wallpapers/bg.frame.%d.${CONFIGS.exportType}`
+        `.bedrock/textures/wallpapers/bg_frame_%d.${CONFIGS.exportType}`
     ]);
 
     ffmpeg.stdout.on("data", (chunk) => {
@@ -71,6 +71,6 @@ if (process.exitCode !== 1) {
         bar.update(totalFrames, { current: totalFrames });
         bar.stop();
         console.log();
-        generator(totalFrames);
+        generator();
     })
 }
