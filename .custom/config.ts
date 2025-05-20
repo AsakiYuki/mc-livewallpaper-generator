@@ -1,8 +1,8 @@
 export const CONFIGS: CONFIGS = {
     // input file name (exclude extension)
     input_file_name: "input",
-    // fps
-    fps: 24,
+    // fps (Recommended fps: 15, 30, 60)
+    fps: 30,
     // resolution
     resolution: "1280x720",
     // export type
