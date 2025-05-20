@@ -6,7 +6,7 @@ export const CONFIGS: CONFIGS = {
     input_file_name: "input",
 
     //* Supported: "betmc_ui", "vanilla"
-    support: "vanilla",
+    support: "betmc_ui",
 }
 
 // type
