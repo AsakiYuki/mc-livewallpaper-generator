@@ -27,6 +27,7 @@ const config = {
 	manifest: {
 		name: "BetMC UI Live Wallpaper [JSONUI-SCRIPTING Projects]",
 		description: "Developed by Asaki Yuki (@asakizuki)",
+		version: [1, 0, 0],
 	},
 }
 
