@@ -1,14 +1,12 @@
 export const CONFIGS: CONFIGS = {
-    // input file name (exclude extension)
-    input_file_name: "input",
-    // fps (Recommended fps: 15, 30, 60)
-    fps: 30,
-    // resolution
     resolution: "1280x720",
-    // export type
+    fps: 30,
     exportType: "jpg",
-    // quality scale
-    quality: 1
+    quality: 1,
+    input_file_name: "input",
+
+    //* Supported: "betmc_ui"
+    support: "betmc_ui",
 }
 
 // type
@@ -17,9 +15,12 @@ interface CONFIGS {
     fps: number,
     resolution: RESOLUTION,
     exportType: EXPORT_TYPE,
-    quality: QUALITY
+    quality: QUALITY,
+    support: SUPPORT
 }
 
+
+type SUPPORT = "betmc_ui";
 type RESOLUTION = "3840x2160" | "1920x1080" | "1280x720"
 type EXPORT_TYPE = "jpg" | "png"
 type QUALITY = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
