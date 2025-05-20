@@ -7,7 +7,7 @@ node_modules
 .save
 
 # Build variables
-asakiyuki.env.cjs
+# asakiyuki.env.cjs
 
 # Compress package
 Minecraft-UIBuild.mcpack
