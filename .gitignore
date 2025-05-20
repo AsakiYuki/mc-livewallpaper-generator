@@ -4,7 +4,7 @@ node_modules
 # Build Folders
 .minecraft
 .build
-.bedrock
+bg_frame_*
 .save
 
 # Build variables

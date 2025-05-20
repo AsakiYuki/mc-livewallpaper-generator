@@ -4,7 +4,7 @@
 
 const { existsSync } = require("fs")
 
-const flakpakVersionPath = `${process.env.HOME}/.var/app/io.mrarm.mcpelauncher/data/mcpelauncher/`
+const flakpakVersionPath = `${process.env.HOME}/.var/app/io.mrarm.mcpelauncher/data/mcpelauncher`
 
 /**
  * Configuration object for the JsonUI Scripting build process.

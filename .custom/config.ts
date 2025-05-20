@@ -1,6 +1,6 @@
 export const CONFIGS: CONFIGS = {
-    input_file_name: "castorice",
-    fps: 30,
+    input_file_name: "input",
+    fps: 15,
     resolution: "1280x720",
     exportType: "jpg",
 }

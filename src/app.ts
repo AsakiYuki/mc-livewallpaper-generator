@@ -2,7 +2,7 @@ import fs from "fs";
 import progress from "cli-progress";
 
 import { spawn, execSync } from "child_process";
-import { UI, Log } from "jsonui-scripting";
+import { Log } from "jsonui-scripting";
 
 import { file } from "./get-video-file";
 import { CONFIGS } from "../.custom/config";
