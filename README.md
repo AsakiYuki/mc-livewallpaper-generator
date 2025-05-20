@@ -74,5 +74,7 @@ export const CONFIGS: CONFIGS = {
 	resolution: "1280x720",
 	// export type
 	exportType: "jpg",
+	// quality scale
+	quality: 1,
 }
 ```

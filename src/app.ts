@@ -31,7 +31,7 @@ if (process.exitCode !== 1) {
     if (!fs.existsSync(".bedrock/textures/wallpapers"))
         fs.mkdirSync(".bedrock/textures/wallpapers", { recursive: true });
     else {
-        fs.rmSync(".bedrock/textures/wallpapers", { recursive: true, force: true });
+        fs.rmSync(".bedrock/textures/wallpapers", { recursive: true });
         fs.mkdirSync(".bedrock/textures/wallpapers");
     }
 
@@ -51,8 +51,8 @@ if (process.exitCode !== 1) {
 
     const ffmpeg = spawn("ffmpeg", [
         "-progress", "pipe:1",
-        "-nostats",
         "-i", `.custom/${file}`,
+        "-q:v", CONFIGS.quality.toString(10),
         "-s", CONFIGS.resolution,
         "-r", CONFIGS.fps.toString(10),
         `.bedrock/textures/wallpapers/bg_frame_%d.${CONFIGS.exportType}`
