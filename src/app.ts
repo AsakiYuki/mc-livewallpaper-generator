@@ -38,37 +38,34 @@ if (process.exitCode !== 1) {
     console.log('---------- CONVERING ----------')
 
     const duration = +execSync(`ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 .custom/${file}`, { stdio: "pipe" }).toString();
-    const totalFrames = Math.round(duration * CONFIGS.fps);
 
     const bar = new progress.SingleBar({
-        format: '\x1b[34mSplitting to Frames\x1b[0m [\x1b[32m{bar}\x1b[0m] \x1b[34m{percentage}% | {current}/{total} frames\x1b[0m',
+        format: '\x1b[34mSplitting to Frames\x1b[0m [\x1b[32m{bar}\x1b[0m] \x1b[34m{percentage}%\x1b[0m',
         barCompleteChar: '#',
         barIncompleteChar: ' ',
         hideCursor: true
     });
 
-    bar.start(totalFrames, 0, { current: 0, total: totalFrames });
+    bar.start(duration, 0);
 
     const ffmpeg = spawn("ffmpeg", [
         "-progress", "pipe:1",
         "-i", `.custom/${file}`,
         "-q:v", CONFIGS.quality.toString(10),
         "-s", CONFIGS.resolution,
-        "-r", CONFIGS.fps.toString(10),
+        "-fpsmax", CONFIGS.fps.toString(10),
         `.bedrock/textures/wallpapers/bg_frame_%d.${CONFIGS.exportType}`
     ]);
 
     ffmpeg.stdout.on("data", (chunk) => {
         const chunkStr = chunk.toString();
-        const frames = +chunkStr.match(/(?<=frame\=)\d+/)[0];
+        const current = +chunkStr.match(/(?<=out_time_us\=)\d+/)[0] / 1e6;
 
-        bar.update(frames, {
-            current: frames
-        });
+        bar.update(current);
     })
 
     ffmpeg.on("close", () => {
-        bar.update(totalFrames, { current: totalFrames });
+        bar.update(duration);
         bar.stop();
         console.log();
         generator();
