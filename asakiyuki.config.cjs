@@ -2,10 +2,6 @@
 // ! THE NAME WILL BE GENERATED TO A RANDOM STRING AND
 // ! JSONUI CANNOT READ IT!
 
-const { existsSync } = require("fs")
-
-const flakpakVersionPath = `${process.env.HOME}/.var/app/io.mrarm.mcpelauncher/data/mcpelauncher`
-
 /**
  * Configuration object for the JsonUI Scripting build process.
  * @type {import('jsonui-scripting').Config}
@@ -13,15 +9,9 @@ const flakpakVersionPath = `${process.env.HOME}/.var/app/io.mrarm.mcpelauncher/d
 const config = {
 	compiler: {
 		autoCompress: true,
-		UI: {
-			namespaceAmount: 1,
-		},
 	},
 	installer: {
-		autoInstall: false,
-		developEvironment: true,
-		customPath: existsSync(flakpakVersionPath),
-		installPath: flakpakVersionPath,
+		autoInstall: true,
 	},
 	manifest: {
 		name: "BetMC UI Live Wallpaper [JSONUI-SCRIPTING Projects]",
