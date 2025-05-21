@@ -9,9 +9,12 @@
 const config = {
 	compiler: {
 		autoCompress: true,
+		UI: {
+			namespaceAmount: 1,
+		},
 	},
 	installer: {
-		autoInstall: true,
+		autoInstall: false,
 	},
 	manifest: {
 		name: "BetMC UI Live Wallpaper [JSONUI-SCRIPTING Projects]",

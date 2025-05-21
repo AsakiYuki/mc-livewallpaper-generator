@@ -3,7 +3,6 @@ import { bgContainer } from "./injector";
 import { readdirSync } from "fs";
 import { CONFIGS } from "../.custom/config";
 
-
 export default function generator() {
     const frameFilePath = 'textures/wallpapers/bg_frame_[FRAME].' + CONFIGS.exportType;
     const totalFrames = readdirSync(".bedrock/textures/wallpapers").length;
