@@ -12,7 +12,3 @@ asakiyuki.env.cjs
 
 # Compress package
 Minecraft-UIBuild.mcpack
-
-# Media files
-*.mp4
-*.mkv
