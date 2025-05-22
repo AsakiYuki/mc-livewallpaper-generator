@@ -1,6 +1,6 @@
 export const CONFIGS: CONFIGS = {
     resolution: "1280x720",
-    fps: 30,
+    fps: 60,
     exportType: "jpg",
     quality: 1,
     input_file_name: "input",

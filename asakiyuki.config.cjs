@@ -14,7 +14,7 @@ const config = {
 		},
 	},
 	installer: {
-		autoInstall: false,
+		autoInstall: true,
 	},
 	manifest: {
 		name: "BetMC UI Live Wallpaper [JSONUI-SCRIPTING Projects]",

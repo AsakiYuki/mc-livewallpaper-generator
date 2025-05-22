@@ -49,12 +49,12 @@ if (process.exitCode !== 1) {
     bar.start(duration, 0);
 
     const ffmpeg = spawn("ffmpeg", [
-        "-progress", "pipe:1",
         "-i", `.custom/${file}`,
-        "-q:v", CONFIGS.quality.toString(10),
         "-s", CONFIGS.resolution,
         "-fpsmax", CONFIGS.fps.toString(10),
-        `.bedrock/textures/wallpapers/bg_frame_%d.${CONFIGS.exportType}`
+        "-q:v", CONFIGS.quality.toString(10),
+        `.bedrock/textures/wallpapers/bg_frame_%d.${CONFIGS.exportType}`,
+        "-progress", "pipe:1",
     ]);
 
     ffmpeg.stdout.on("data", (chunk) => {
@@ -68,6 +68,6 @@ if (process.exitCode !== 1) {
         bar.update(duration);
         bar.stop();
         console.log();
-        generator();
+        generator(duration);
     })
 }

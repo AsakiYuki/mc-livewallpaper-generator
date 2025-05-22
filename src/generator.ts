@@ -3,11 +3,11 @@ import { bgContainer } from "./injector";
 import { readdirSync } from "fs";
 import { CONFIGS } from "../.custom/config";
 
-export default function generator() {
+export default function generator(duration: number) {
     const frameFilePath = 'textures/wallpapers/bg_frame_[FRAME].' + CONFIGS.exportType;
     const totalFrames = readdirSync(".bedrock/textures/wallpapers").length;
 
-    const durationPerFrame = 1 / CONFIGS.fps;
+    const durationPerFrame = duration / totalFrames;
 
     const keyFrames: AnimationKey[] = [];
 
