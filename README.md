@@ -65,3 +65,7 @@ npm run node-build
 # Configure
 
 You can also configure by editing the file `config.cjs` in the `.custom` folder with parameters such as fps, resolution, and more.
+
+# Know issue
+
+Sometimes when you launch Minecraft, you'll only see a completely black background. You can double-check whether your resource pack has been properly installed. If it has, then it's a Minecraft issue where it's unable to read the image. The only way to fix this is to try restarting the game or go into the `config.cjs` file inside the `.custom` folder, tweak it, and then run the command `npm run node-build`.
