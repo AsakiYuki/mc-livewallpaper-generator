@@ -9,6 +9,7 @@
 const config = {
 	compiler: {
 		autoCompress: true,
+		fileExtension: "",
 		UI: {
 			namespaceAmount: 1,
 		},
