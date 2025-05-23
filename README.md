@@ -20,7 +20,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 And after successfully installing [Scoop](https://scoop.sh/), run the following commands to install the required software:
 
 ```ps
-scoop install git bun ffmpeg
+scoop install git nodejs ffmpeg
 ```
 
 ## Arch Linux
@@ -28,7 +28,7 @@ scoop install git bun ffmpeg
 For Arch Linux users, you need to use an AUR helper like yay to install the following packages.
 
 ```bash
-yay -S bun git ffmpeg
+yay -S npm nodejs git ffmpeg
 ```
 
 # Installation
@@ -41,7 +41,7 @@ git clone https://github.com/AsakiYuki/mc-livewallpaper-generator.git
 # change directory to "mc-livewallpaper-generator"
 cd ./mc-livewallpaper-generator
 # install npm packages
-bun install
+npm install
 ```
 
 # Usage
@@ -53,7 +53,7 @@ To use the project, you need to take a video file with the original format `mp4`
 And then you need to run the project to build a live wallpaper resource packs.
 
 ```bash
-bun run build
+npm run node-build
 ```
 
 <!-- After running, the project will not return any errors and you will have successfully created a resource pack. Usually, your resource pack will be automatically installed into your game, and you just need to launch the game and enjoy it. -->

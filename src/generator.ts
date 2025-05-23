@@ -1,6 +1,6 @@
 import { UI, Animation, AnimationTypes, AnimationKey } from "jsonui-scripting";
-import { bgContainer } from "./injector";
 import { readdirSync } from "fs";
+import { bgContainer } from "./injector";
 import { CONFIGS } from "../.custom/config";
 
 export default function generator(duration: number) {

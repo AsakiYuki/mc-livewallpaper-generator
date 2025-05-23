@@ -6,6 +6,7 @@ node_modules
 .build
 bg_frame_*
 .save
+dist
 
 # Build variables
 asakiyuki.env.cjs
