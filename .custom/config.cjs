@@ -7,8 +7,6 @@ const config = {
 	exportType: "jpg",
 	quality: 1,
 	input_file_name: "input",
-
-	//* Supported: "betmc_ui", "vanilla"
 	support: "betmc_ui",
 }
 
