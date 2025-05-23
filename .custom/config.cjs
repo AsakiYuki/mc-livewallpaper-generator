@@ -3,7 +3,7 @@
  */
 const config = {
 	resolution: "1280x720",
-	fps: 15,
+	fps: 30,
 	exportType: "jpg",
 	quality: 1,
 	input_file_name: "input",
