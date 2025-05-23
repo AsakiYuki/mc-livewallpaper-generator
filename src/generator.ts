@@ -1,7 +1,8 @@
 import { UI, Animation, AnimationTypes, AnimationKey } from "jsonui-scripting";
 import { readdirSync } from "fs";
 import { bgContainer } from "./injector";
-import { CONFIGS } from "../.custom/config";
+import { CONFIGS } from "./config";
+
 
 export default function generator(duration: number) {
     const frameFilePath = 'textures/wallpapers/bg_frame_[FRAME].' + CONFIGS.exportType;

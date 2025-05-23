@@ -5,7 +5,7 @@ import { spawn, execSync } from "child_process";
 import { Log } from "jsonui-scripting";
 
 import { file } from "./get-video-file";
-import { CONFIGS } from "../.custom/config";
+import { CONFIGS } from "./config";
 import generator from "./generator";
 
 if (!file) {

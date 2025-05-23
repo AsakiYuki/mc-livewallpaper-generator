@@ -1,0 +1,15 @@
+/**
+ * @type {import('../src/config').InterfaceConfigs}
+ */
+const config = {
+	resolution: "1280x720",
+	fps: 15,
+	exportType: "jpg",
+	quality: 1,
+	input_file_name: "input",
+
+	//* Supported: "betmc_ui", "vanilla"
+	support: "betmc_ui",
+}
+
+module.exports = { config }

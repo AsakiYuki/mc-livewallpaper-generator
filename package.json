@@ -10,7 +10,7 @@
   },
   "scripts": {
     "bun-build": "bun run src/app.ts",
-    "node-build": "node dist/src/app.js",
+    "node-build": "node dist/app.js",
     "build": "npx tsc"
   }
 }

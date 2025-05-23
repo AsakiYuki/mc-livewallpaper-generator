@@ -64,19 +64,4 @@ npm run node-build
 
 # Configure
 
-You can also configure by editing the file `config.ts` in the `.custom` folder with parameters such as fps, resolution, and more.
-
-```ts
-export const CONFIGS: CONFIGS = {
-	// input file name (exclude extension)
-	input_file_name: "input",
-	// fps
-	fps: 15,
-	// resolution
-	resolution: "1280x720",
-	// export type
-	exportType: "jpg",
-	// quality scale
-	quality: 1,
-}
-```
+You can also configure by editing the file `config.cjs` in the `.custom` folder with parameters such as fps, resolution, and more.
