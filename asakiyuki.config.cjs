@@ -1,7 +1,3 @@
-// ! DO NOT SET 'obfuscateName' TO 'true'. IF YOU SET IT 'true'
-// ! THE NAME WILL BE GENERATED TO A RANDOM STRING AND
-// ! JSONUI CANNOT READ IT!
-
 /**
  * Configuration object for the JsonUI Scripting build process.
  * @type {import('jsonui-scripting').Config}
@@ -12,6 +8,7 @@ const config = {
 		fileExtension: "",
 		UI: {
 			namespaceAmount: 1,
+			obfuscateName: true,
 		},
 	},
 	installer: {

@@ -13,10 +13,12 @@ export let bgContainer = UI.panel({
 
 switch (CONFIGS.support) {
     case "betmc_ui": {
-        bgContainer.extend({
-            name: "betmc_animation_background_frame",
-            namespace: "betmc_background"
-        });
+        Modify.register("betmc_ui/betmc_common/betmc_bg_common.json", `betmc_animation_background_frame`)
+            .addChild(bgContainer)
+            .override.setProperties({
+                size: "100%",
+                anchor: Anchor.Center,
+            });
 
         Modify.register("betmc_config/config.json", "betmc_main_config").override.setProperties({
             $use_background_static_customs: false,
