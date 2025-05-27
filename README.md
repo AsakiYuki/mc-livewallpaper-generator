@@ -41,7 +41,7 @@ git clone https://github.com/AsakiYuki/mc-livewallpaper-generator.git
 # change directory to "mc-livewallpaper-generator"
 cd ./mc-livewallpaper-generator
 # install npm packages
-npm
+npm install
 # build this project
 npm run build
 ```
