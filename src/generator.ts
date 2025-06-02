@@ -2,6 +2,7 @@ import { UI, Animation, AnimationTypes, AnimationKey } from "jsonui-scripting";
 import { readdirSync } from "fs";
 import { bgContainer } from "./injector";
 import { CONFIGS } from "./config";
+import { spawnSync } from "child_process";
 
 
 export default function generator(duration: number) {
@@ -11,6 +12,12 @@ export default function generator(duration: number) {
     const durationPerFrame = duration / totalFrames;
 
     const keyFrames: AnimationKey[] = [];
+
+    spawnSync("ffmpeg", [
+        "-i", `.bedrock/textures/wallpapers/bg_frame_${totalFrames / 2 << 0}.${CONFIGS.exportType}`,
+        "-vf", `gblur=sigma=${CONFIGS.blur}`,
+        ".bedrock/textures/wallpapers/blur." + CONFIGS.exportType
+    ])
 
     for (let index = 0; index < totalFrames; index++) {
         const frame = UI.image({

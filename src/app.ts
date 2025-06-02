@@ -1,7 +1,7 @@
 import fs from "fs";
 import progress from "cli-progress";
 
-import { spawn, execSync } from "child_process";
+import { spawn, execSync, spawnSync } from "child_process";
 import { Log } from "jsonui-scripting";
 
 import { file } from "./get-video-file";
@@ -35,7 +35,7 @@ if (process.exitCode !== 1) {
         fs.mkdirSync(".bedrock/textures/wallpapers");
     }
 
-    console.log('---------- CONVERING ----------')
+    console.log('---------- CONVERTING ----------')
 
     const duration = +execSync(`ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 .custom/${file}`, { stdio: "pipe" }).toString();
 

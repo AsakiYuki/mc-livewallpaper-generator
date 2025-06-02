@@ -8,16 +8,16 @@ const config = {
 		fileExtension: "",
 		UI: {
 			namespaceAmount: 1,
-			obfuscateName: true,
+			obfuscateName: false,
 		},
 	},
 	installer: {
 		autoInstall: true,
 	},
 	manifest: {
-		name: "BetMC UI Live Wallpaper [JSONUI-SCRIPTING Projects]",
-		description: "Developed by Asaki Yuki (@asakizuki)",
-		version: [1, 0, 0],
+		name: "Bedrock Live Wallpaper",
+		description: "Compatible with BetMC UI and Neko UI\nDeveloped by Asaki Yuki (@asakizuki)",
+		version: [1, 0, 1],
 	},
 }
 

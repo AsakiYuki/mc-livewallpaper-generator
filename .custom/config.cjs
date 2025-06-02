@@ -3,11 +3,12 @@
  */
 const config = {
 	resolution: "1280x720",
-	fps: 30,
+	fps: 15,
 	exportType: "jpg",
 	quality: 1,
+	blur: 5,
 	input_file_name: "input",
-	support: "betmc_ui",
+	support: "custom_ui",
 }
 
 module.exports = { config }
