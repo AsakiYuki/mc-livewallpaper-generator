@@ -2,8 +2,6 @@
 
 A live wallpaper generators for some of [your favorite UI resource packs](https://github.com/AsakiYuki/mc-livewallpaper-generator?tab=readme-ov-file#supported-ui-packs), using [FFmpeg](https://www.ffmpeg.org/) and [JsonUI Scripting](https://github.com/AsakiYuki/JsonUI-Scripting)
 
-Note: you also need to install the [BetMC UI](https://github.com/BetMC2411/BetMC_UI/releases/tag/betmc_ui_releases) resource packs before you can use this project!
-
 # Getting Started
 
 Before getting started, you need to install the necessary components to run, including:
