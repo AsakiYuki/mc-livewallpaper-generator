@@ -1,6 +1,6 @@
 # Introduction
 
-A live wallpaper generators for [BetMC UI](https://github.com/BetMC2411/BetMC_UI/releases/tag/betmc_ui_releases), using [FFMPEG](https://www.ffmpeg.org/) and [JSONUI SCRIPTING](https://github.com/AsakiYuki/JsonUI-Scripting)
+A live wallpaper generators for some of [your favorite UI resource packs](#supported_ui_packs), using [Ffmpeg](https://www.ffmpeg.org/) and [JsonUI Scripting](https://github.com/AsakiYuki/JsonUI-Scripting)
 
 Note: you also need to install the [BetMC UI](https://github.com/BetMC2411/BetMC_UI/releases/tag/betmc_ui_releases) resource packs before you can use this project!
 
@@ -65,6 +65,11 @@ npm run node-build
 # Configure
 
 You can also configure by editing the file `config.cjs` in the `.custom` folder with parameters such as fps, resolution, and more.
+
+# Supported UI packs
+
+-   BetMC UI: [BetMC's community](https://discord.com/invite/6ZVDWUJUcU)
+-   Neko UI: [Han's community](https://discord.gg/K4ktq5pQZK)
 
 # Know issue
 
