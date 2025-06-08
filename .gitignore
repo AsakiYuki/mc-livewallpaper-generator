@@ -5,6 +5,7 @@ node_modules
 .minecraft
 .build
 bg_frame_*
+blur*
 .save
 dist
 
