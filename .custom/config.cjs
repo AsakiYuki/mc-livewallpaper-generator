@@ -3,7 +3,7 @@
  */
 const config = {
 	resolution: "1280x720",
-	fps: 15,
+	fps: 30,
 	exportType: "jpg",
 	quality: 1,
 	blur: 5,
@@ -11,4 +11,13 @@ const config = {
 	support: "custom_ui",
 }
 
-module.exports = { config }
+/**
+ * @type {import("jsonui-scripting").Config["manifest"]}
+ */
+const manifest = {
+	name: "Bedrock Live Wallpaper",
+	description: "Compatible with BetMC UI and Neko UI\nDeveloped by Asaki Yuki (@asakizuki)",
+	version: [1, 0, 1],
+}
+
+module.exports = { config, manifest }
