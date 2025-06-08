@@ -14,9 +14,9 @@ switch (CONFIGS.support) {
     case "custom_ui": {
         // Neko UI
         Modify.register(".hans_common_files/.hans_animated_background.json", "bg_anim").addChild(bgContainer).modify.controls.remove("bg_anim_b");
-        Modify.register(".hans_common_files/.hans_animated_background.json", "blur").override.setProperties({
+        Modify.register(".hans_common_files/.hans_animated_background.json", "blur", {
             texture: "textures/wallpapers/blur." + CONFIGS.exportType,
-        })
+        });
         Modify.register(".hans_common_files/.hans_loading_background.json", "bg_anim", {
             x: 0,
             y: 0
