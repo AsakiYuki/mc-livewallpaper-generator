@@ -17,6 +17,10 @@ switch (CONFIGS.support) {
         Modify.register(".hans_common_files/.hans_animated_background.json", "blur").override.setProperties({
             texture: "textures/wallpapers/blur." + CONFIGS.exportType,
         })
+        Modify.register(".hans_common_files/.hans_loading_background.json", "bg_anim", {
+            x: 0,
+            y: 0
+        }).override.addChild(bgContainer);
 
         // BetMC UI
         Modify.register("betmc_ui/betmc_common/betmc_bg_common.json", `betmc_animation_background_frame`)

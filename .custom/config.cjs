@@ -16,7 +16,8 @@ const config = {
  */
 const manifest = {
 	name: "Bedrock Live Wallpaper",
-	description: "Compatible with BetMC UI and Neko UI\nDeveloped by Asaki Yuki (@asakizuki)",
+	description: `Compatible with BetMC UI and Neko UI
+Developed by Asaki Yuki (@asakizuki)`,
 	version: [1, 0, 1],
 }
 
