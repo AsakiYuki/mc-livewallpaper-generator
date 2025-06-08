@@ -26,7 +26,7 @@ scoop install git nodejs ffmpeg
 For Arch Linux users, you need to use an AUR helper like yay to install the following packages.
 
 ```bash
-yay -S npm nodejs git ffmpeg
+yay -S --needed npm nodejs git ffmpeg
 ```
 
 # Installation
