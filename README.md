@@ -1,6 +1,6 @@
 # Introduction
 
-A live wallpaper generators for some of [your favorite UI resource packs](https://github.com/AsakiYuki/mc-livewallpaper-generator?tab=readme-ov-file#supported-ui-packs), using [FFmpeg](https://www.ffmpeg.org/) and [JsonUI Scripting](https://github.com/AsakiYuki/JsonUI-Scripting)
+A live wallpaper generators for some of [your favorite UI resource packs](https://github.com/AsakiYuki/mc-livewallpaper-generator?tab=readme-ov-file#supported-ui-packs), using [FFmpeg](https://www.ffmpeg.org/) and [AsaJS](https://github.com/AsakiYuki/asajs)
 
 # Getting Started
 

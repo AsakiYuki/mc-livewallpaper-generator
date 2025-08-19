@@ -12,7 +12,7 @@ const config = {
 }
 
 /**
- * @type {import("jsonui-scripting").Config["manifest"]}
+ * @type {import("asajs").Config["manifest"]}
  */
 const manifest = {
 	name: "Bedrock Live Wallpaper",

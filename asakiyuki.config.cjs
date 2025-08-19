@@ -2,7 +2,7 @@ const { manifest } = require("./.custom/config.cjs")
 
 /**
  * Configuration object for the JsonUI Scripting build process.
- * @type {import('jsonui-scripting').Config}
+ * @type {import('asajs').Config}
  */
 const config = {
 	compiler: {

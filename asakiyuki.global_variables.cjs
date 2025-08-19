@@ -1,5 +1,5 @@
-const {} = require("jsonui-scripting");
+const {} = require("asajs")
 
-const global_variables = {};
+const global_variables = {}
 
-module.exports = { global_variables };
+module.exports = { global_variables }
