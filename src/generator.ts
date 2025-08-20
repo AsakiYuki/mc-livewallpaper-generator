@@ -50,6 +50,7 @@ export default function generator(duration: number) {
 		type: AnimationTypes.Offset,
 		from: ["0%", "0%"],
 		loop: true,
+		smartCycle: false,
 		keyFrames,
 	})
 

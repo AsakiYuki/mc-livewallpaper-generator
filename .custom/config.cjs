@@ -9,6 +9,8 @@ const config = {
 	blur: 5,
 	input_file_name: "input",
 	support: "custom_ui",
+	version: "1.0",
+	creator_name: "Asaki Yuki",
 }
 
 /**

@@ -1,7 +1,7 @@
 import fs from "fs"
 import progress from "cli-progress"
 
-import { spawn, execSync, spawnSync } from "child_process"
+import { spawn, execSync } from "child_process"
 import { Log } from "asajs"
 
 import { file } from "./get-video-file"

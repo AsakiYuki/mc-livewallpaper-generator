@@ -1,16 +1,16 @@
 {
-  "dependencies": {
-    "asajs": "^3.0.7",
-    "cli-progress": "^3.12.0"
-  },
-  "devDependencies": {
-    "@types/cli-progress": "^3.11.6",
-    "@types/node": "^22.15.19",
-    "typescript": "^5.8.3"
-  },
-  "scripts": {
-    "bun-build": "bun run src/app.ts",
-    "node-build": "node dist/app.js",
-    "build": "npx tsc"
-  }
+	"dependencies": {
+		"asajs": "^3.0.7",
+		"cli-progress": "^3.12.0"
+	},
+	"devDependencies": {
+		"@types/cli-progress": "^3.11.6",
+		"@types/node": "^22.15.19",
+		"typescript": "^5.8.3"
+	},
+	"scripts": {
+		"bun-build": "npx bun run src/app.ts",
+		"node-build": "node dist/app.js",
+		"build": "npx tsc"
+	}
 }

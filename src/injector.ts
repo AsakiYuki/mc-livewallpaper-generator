@@ -16,13 +16,27 @@ export let bgContainer = UI.panel(
 switch (CONFIGS.support) {
 	case "custom_ui": {
 		// Neko UI
-		Modify.register(".hans_common_files/.hans_animated_background.json", "bg_anim")
+
+		// Older than version 5
+		Modify.register(".hans_common_files/..hans_core_background.json", "bg_anim")
 			.addChild(bgContainer)
 			.modify.controls.remove("bg_anim_b")
 		Modify.register(".hans_common_files/.hans_animated_background.json", "blur", {
 			texture: "textures/wallpapers/blur." + CONFIGS.exportType,
 		})
 		Modify.register(".hans_common_files/.hans_loading_background.json", "bg_anim", {
+			x: 0,
+			y: 0,
+		}).override.addChild(bgContainer)
+
+		// Version 5 or newer
+		Modify.register(".hans_common_files/.hans_core_background.json", "bg_anim")
+			.addChild(bgContainer)
+			.modify.controls.remove("bg_anim_b")
+		Modify.register(".hans_common_files/.hans_core_background.json", "blur", {
+			texture: "textures/wallpapers/blur." + CONFIGS.exportType,
+		})
+		Modify.register(".hans_common_files/.hans_core_loading_background.json", "bg_anim", {
 			x: 0,
 			y: 0,
 		}).override.addChild(bgContainer)
